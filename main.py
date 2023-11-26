@@ -15,9 +15,10 @@ if __name__ == '__main__':
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 import pygame, sys
+from settings import *
+from tiles import Tile
+
 pygame.init()
-screen_width= 1200
-screen_height = 700
 screen = pygame.display.set_mode((screen_width,screen_height))
 clock = pygame.time.Clock()
 
@@ -27,6 +28,5 @@ while True:
             pygame.quit()
             sys.exit()
     screen.fill('black')
-
     pygame.display.update()
     clock.tick(60)
