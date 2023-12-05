@@ -1,8 +1,9 @@
 import pygame
 from tiles import Tile
-from settings import tile_size, screen_width
+from settings import tile_size, screen_width, max_level_width, level_maps
 from player import Player
 from particles import ParticleEffect
+import random
 
 class Level:
     def __init__(self, level_data, surface):
@@ -11,6 +12,8 @@ class Level:
         self.setup_level(level_data)
         self.world_shift = 0
         self.current_x = 0
+
+        self.current_level_x = 0
 
         # dust
         self.dust_sprite = pygame.sprite.GroupSingle()
@@ -124,6 +127,8 @@ class Level:
 
     def run(self):
         # dust particles
+        self.current_level_x += self.world_shift
+
         self.dust_sprite.update(self.world_shift)
         self.dust_sprite.draw(self.display_surface)
 
@@ -132,7 +137,6 @@ class Level:
         self.tiles.draw(self.display_surface)
         self.scroll_x()
 
-
         # player
         self.player.update()
         self.horizontal_movement_collision()
@@ -140,3 +144,13 @@ class Level:
         self.vertical_movement_collision()
         self.create_landing_dust()
         self.player.draw(self.display_surface)
+
+        if self.current_level_x <= -max_level_width:
+            self.tiles.empty()
+            self.setup_level(level_maps[random.randint(0,len(level_maps) - 1)])
+            self.world_shift = 0
+            self.current_x = 0
+            self.current_level_x = 0
+
+
+
