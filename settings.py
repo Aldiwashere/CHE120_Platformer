@@ -3,7 +3,7 @@ level_maps = [[
 '                              ',
 'XX    XXX        XX        XXX',
 '                              ',
-'P                              ',
+'   P                           ',
 'XXXXXXXXX   XXXXXXXXXXXX  XXXXXX',
 'XXXXXXXX   XXXXXXXXXXXX  XXXXXX',
 'XXXXXXXXX   XXXXXXXXXXXXX  XXXXX',
@@ -36,7 +36,7 @@ level_maps = [[
 '                              ',
 'XX    XXX        XX        XXX',
 '                              ',
-'   P                           ',
+'   P           XX                ',
 '  XX XXXX   XXXXX    XXX  XXXXXX',
 '  XX XXXX   XXXXX    XXXX  XXXXXX',
 '  XX XXXX   XXXXXX  XXXXXXX  XXXXX',
@@ -47,13 +47,34 @@ level_maps = [[
 '                              ',
 'XX    XXX        XX        XXX',
 '                              ',
+'    P                           ',
+'  XXXXX XX   XX  XX   XX  XX        XXXX',
+'  XXXXX XX   XX  XX      XXX        XX  XXXXXX',
+'  XXXXX XX   XX   XXXX      XXX     X  XXXXX',
+'  XXXXX XX   XX   XX     XXXXX      X  XXXXXX',
+'  XXXXX XX   XX   XXXXXXXX  XXX     X'],
+[
+'                              ',
+'                              ',
+'XX    XX        XX        XXX',
+'            XX                  ',
 '      P                        ',
 '  XXXXXXX   XXXX   XX  XX        XXXX',
 '  XXXXXXX   XXXXX      XXX        XX  XXXXXX',
 '  XXXXXXX   XXXXXXX      XXX     X  XXXXX',
 '  XXXXXXX   XXXXXXX     XXXXX      X  XXXXXX',
-'  XXXXXXX   XXXXXXXXXXXXX  XXX     X']]
-
+'  XXXXXXX   XXXXXXXXXXXXX  XXX     X'],
+[
+'                              ',
+'                              ',
+'XX    XXX        XX        XXX',
+'                              ',
+'      P                        ',
+'  XXXXXXX   XX     X X   XX  XX        XXXX',
+'  XXXXXXX   XX    XXX      XXX        XX  XXXXXX',
+'  XXXXXXX   XXX    XXXX      XXX     X  XXXXX',
+'  XXXXXXX   XXX    XXXX     XXXXX      X  XXXXXX',
+'  XXXXXXX   XXXX     XXXXXXXXX  XXX     X']]
 #design level makeup
 
 tile_size = 50

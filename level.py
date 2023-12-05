@@ -145,6 +145,7 @@ class Level:
         self.create_landing_dust()
         self.player.draw(self.display_surface)
 
+        # so this is how the level resets, and it choses a random map to set our play to, once player reaches the max level width it resets
         if self.current_level_x <= -max_level_width:
             self.tiles.empty()
             self.setup_level(level_maps[random.randint(0,len(level_maps) - 1)])
