@@ -76,7 +76,7 @@ level_maps = [[
 '  XXXXXXX   XXX    XXXX     XXXXX      X  XXXXXX',
 '  XXXXXXX   XXXX     XXXXXXXXX  XXX     X']]
 #design level makeup
-
+#Different levels, that will be infinetely looping as character runs through
 tile_size = 50
 
 max_level_width = 720
