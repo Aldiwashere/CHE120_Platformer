@@ -140,7 +140,7 @@ class Player(pygame.sprite.Sprite):
             self.jump_timer = 10
             self.direction.y = self.jump_speed
             self.num_jumps -= 1
-
+#To implement the double jump, a timer was set so when the player jumps, a timer of 10 frames is started until the player can jump again. The number of jumps is also only limited to one so the player cannot jump more than once in the air. 
     def update(self):
         # calling this function
         self.get_input()
