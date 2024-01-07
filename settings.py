@@ -82,3 +82,6 @@ tile_size = 50
 max_level_width = 720
 screen_width = 1200
 screen_height = len(level_maps[0]) * tile_size
+
+#this is how the level resets, it chooses a random map to set our play to, once player reaches the max level width it resets  
+#one of our unique aspects that is different to the inspiration video
